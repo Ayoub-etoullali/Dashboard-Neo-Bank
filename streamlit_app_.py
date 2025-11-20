@@ -10,6 +10,25 @@ logging.basicConfig(level=logging.INFO)
 
 st.set_page_config(page_title="Dashboard Néo-Banque", layout="centered")
 
+# Modern fintech color palette
+PALETTE = {
+    "primary": "#0B63D6",       # Blue main
+    "positive_bg": "#e6f4ea",   # Light green
+    "positive_text": "#2d8a4a", # Dark green
+    "negative_bg": "#fdeaea",   # Light red
+    "negative_text": "#d93025", # Dark red
+    "warning_bg": "#fff8e6",    # Light yellow
+    "warning_text": "#fbbc04",  # Orange
+    "info_bg": "#f5f5f5",       # Neutral gray
+    "shadow": "0 4px 12px rgba(0,0,0,0.08)"
+}
+
+# Typography
+FONT_SIZE_TITLE = "28px"
+FONT_SIZE_SUBTITLE = "20px"
+FONT_SIZE_TEXT = "16px"
+
+
 # Fonction pour initialiser ou réinitialiser l'état de la session
 def reset_scoring_state():
     """Réinitialise les variables de session liées au scoring et aux explications SHAP."""
