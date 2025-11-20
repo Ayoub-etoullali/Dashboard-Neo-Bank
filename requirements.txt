@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pandas
+numpy==1.24.4
+joblib
+shap
+scikit-learn==1.3.0
+streamlit
+requests
+streamlit-echarts
